@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  postgres:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: dev_purchase
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./postgres-data:/app/postgres-data
