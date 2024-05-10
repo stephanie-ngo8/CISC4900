@@ -10,6 +10,11 @@ import TableRow from "@mui/material/TableRow";
 import TableCell from "@mui/material/TableCell";
 import TableBody from "@mui/material/TableBody";
 import DialogCode from "@/app/dashboard/codeGL/DialogCode";
+import Typography from "@mui/material/Typography";
+import {Button} from "@mui/material";
+import {Add, Delete, Visibility} from "@mui/icons-material";
+import dayjs from "dayjs";
+import IconButton from "@mui/material/IconButton";
 
 export default function Code() {
     const [data, setData] = useState([]);
@@ -50,10 +55,15 @@ export default function Code() {
     }
 
     return (
-        <Box sx={{width: '100%'}}>
-            <button onClick={() => setOpen(true)}>Add a new code</button>
-            <TableContainer component={Paper} variant={'outlined'}>
-                <Table sx={{minWidth: 650}} size="small" aria-label="a dense table">
+        <Box sx={{p: 3, overflow: 'auto', width: '100%'}}>
+            <TableContainer component={Paper} elevation={3} sx={{width: '100%'}}>
+                <Box sx={{p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <Typography variant={'h6'}>
+                        Code G/L
+                    </Typography>
+                    <Button variant={'outlined'} startIcon={<Add/>} onClick={() => setOpen(true)}>Add a new code</Button>
+                </Box>
+                <Table sx={{width: '100%'}} size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
                             <TableCell>Code</TableCell>
@@ -69,18 +79,22 @@ export default function Code() {
                                 key={row.id}
                                 sx={{'&:last-child td, &:last-child th': {border: 0}}}
                             >
-                                <TableCell component="th" scope="row">
+                                <TableCell component="th" scope="row" align="left">
                                     {row.code}
                                 </TableCell>
                                 <TableCell align="right">{row.name}</TableCell>
-                                <TableCell align="right">{row.updatedAt}</TableCell>
-                                <TableCell align="right">{row.createdAt}</TableCell>
+                                <TableCell align="right">{dayjs(row.updatedAt).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
+                                <TableCell align="right">{dayjs(row.createdAt).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
                                 <TableCell align="right">
-                                    <button onClick={() => {
+                                    <IconButton size={'small'} onClick={() => {
                                         setCodeToEdit(row);
                                         setOpen(true);
-                                    }}>Update</button>
-                                    <button onClick={async () => deleteCode(row.id)}>Delete</button>
+                                    }}>
+                                        <Visibility fontSize={'small'}/>
+                                    </IconButton>
+                                    <IconButton size={'small'} onClick={async () => deleteCode(row.id)}>
+                                        <Delete fontSize={'small'}/>
+                                    </IconButton>
                                 </TableCell>
                             </TableRow>
                         ))}

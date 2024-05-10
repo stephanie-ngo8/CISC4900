@@ -1,0 +1,1424 @@
+{
+  "Department": [
+    {
+      "Account Code": "101000",
+      "Account Title": "Management & General"
+    },
+    {
+      "Account Code": "101500",
+      "Account Title": "Appropriated Funds General"
+    },
+    {
+      "Account Code": "101600",
+      "Account Title": "884 Flatbush Bldg Costs"
+    },
+    {
+      "Account Code": "101601",
+      "Account Title": "885 Flatbush Bldg Facility Costs"
+    },
+    {
+      "Account Code": "101602",
+      "Account Title": "2211 Church Bldg Facility Costs"
+    },
+    {
+      "Account Code": "103105",
+      "Account Title": "General Support - Clark"
+    },
+    {
+      "Account Code": "104401",
+      "Account Title": "Contributions Park Avenue Residence"
+    },
+    {
+      "Account Code": "104501",
+      "Account Title": "Contributions Kings Inn"
+    },
+    {
+      "Account Code": "104601",
+      "Account Title": "Contributions Kensington"
+    },
+    {
+      "Account Code": "104901",
+      "Account Title": "Contributions The Landing"
+    },
+    {
+      "Account Code": "105000",
+      "Account Title": "Development"
+    },
+    {
+      "Account Code": "105001",
+      "Account Title": "WorkBoost NYC Ecosystem Initiative FY23"
+    },
+    {
+      "Account Code": "105213",
+      "Account Title": "CAMBA Annual Event 2022"
+    },
+    {
+      "Account Code": "105309",
+      "Account Title": "CAMBA Cyclones Event FY23"
+    },
+    {
+      "Account Code": "105610",
+      "Account Title": "CAMBA Healthy Way 5K Annual Event FY23"
+    },
+    {
+      "Account Code": "106001",
+      "Account Title": "Security Guard Instructional Services"
+    },
+    {
+      "Account Code": "106601",
+      "Account Title": "CAMBA Legal Salaries"
+    },
+    {
+      "Account Code": "106602",
+      "Account Title": "CADMA Salaries"
+    },
+    {
+      "Account Code": "106603",
+      "Account Title": "EDC Salaries"
+    },
+    {
+      "Account Code": "106604",
+      "Account Title": "SONGEA Salaries"
+    },
+    {
+      "Account Code": "106605",
+      "Account Title": "Flatbush BID Salaries"
+    },
+    {
+      "Account Code": "106610",
+      "Account Title": "CAMBA Legal 2 Salaries"
+    },
+    {
+      "Account Code": "106611",
+      "Account Title": "CAMBA Legal Salaries FY22 - Working Poor"
+    },
+    {
+      "Account Code": "106612",
+      "Account Title": "CAMBA Legal ActionNYC"
+    },
+    {
+      "Account Code": "106701",
+      "Account Title": "Gifts For Match Grt Program Clients"
+    },
+    {
+      "Account Code": "107001",
+      "Account Title": "Business Workshop Fees"
+    },
+    {
+      "Account Code": "107101",
+      "Account Title": "CAMBA Housing Ventures Salaries"
+    },
+    {
+      "Account Code": "107102",
+      "Account Title": "CHV - 880 Willoughby Salaries"
+    },
+    {
+      "Account Code": "107103",
+      "Account Title": "CHV - 1247 Flatbush Salaries"
+    },
+    {
+      "Account Code": "107104",
+      "Account Title": "CHV - CAMBA Gardens Salaries"
+    },
+    {
+      "Account Code": "107105",
+      "Account Title": "CHV - Buckingham Security Salaries"
+    },
+    {
+      "Account Code": "107106",
+      "Account Title": "CHV -560 Winthrop Salaries"
+    },
+    {
+      "Account Code": "107201",
+      "Account Title": "97 Crooke Ave Operations"
+    },
+    {
+      "Account Code": "107401",
+      "Account Title": "Contributions For Food Pantry"
+    },
+    {
+      "Account Code": "107601",
+      "Account Title": "Contributions Park slope"
+    },
+    {
+      "Account Code": "107901",
+      "Account Title": "Attorney Fees"
+    },
+    {
+      "Account Code": "160500",
+      "Account Title": "Representative Payee Account - Citywide Client"
+    },
+    {
+      "Account Code": "310423",
+      "Account Title": "SED English Language/Civics Education FY24"
+    },
+    {
+      "Account Code": "311518",
+      "Account Title": "Refugee Social Services Program FY24"
+    },
+    {
+      "Account Code": "311927",
+      "Account Title": "Victims Assistance Program FY23"
+    },
+    {
+      "Account Code": "313207",
+      "Account Title": "NYS Enhanced Services to Refugees Program (NYSESRP) FY24"
+    },
+    {
+      "Account Code": "313405",
+      "Account Title": "Via Vyse Supportive Housing Program FY24"
+    },
+    {
+      "Account Code": "313510",
+      "Account Title": "CAMBA Healthy Families MIECHV FY23"
+    },
+    {
+      "Account Code": "314313",
+      "Account Title": "Comprehensive Adolescent Pregnancy Prevention Program FY24"
+    },
+    {
+      "Account Code": "316308",
+      "Account Title": "Enough is Enough Initiative FY24"
+    },
+    {
+      "Account Code": "316507",
+      "Account Title": "Sexual Assault Crisis & Prevention Program FY23"
+    },
+    {
+      "Account Code": "316606",
+      "Account Title": "Perinatal and Infant Community Health Collaboratives Program FY24"
+    },
+    {
+      "Account Code": "317018",
+      "Account Title": "Adult Basic Educ/Literacy Service/Family Literacy FY24"
+    },
+    {
+      "Account Code": "317605",
+      "Account Title": "Career Pathways III FY24"
+    },
+    {
+      "Account Code": "318413",
+      "Account Title": "Hunger Prevention & Nutrition Assistance Program (DOH) FY24"
+    },
+    {
+      "Account Code": "318704",
+      "Account Title": "Solutions to End Homelessness Program - Prevention FY23"
+    },
+    {
+      "Account Code": "319018",
+      "Account Title": "Supportive Hsing for Adults with Serious & Persistent Mental Illness FY24"
+    },
+    {
+      "Account Code": "319230",
+      "Account Title": "Supportive Housing (10 Units) FY24"
+    },
+    {
+      "Account Code": "319231",
+      "Account Title": "Supportive Housing (7 Units) FY24"
+    },
+    {
+      "Account Code": "319413",
+      "Account Title": "Westwind Houses Supportive Housing SRO FY24"
+    },
+    {
+      "Account Code": "319513",
+      "Account Title": "Putnam Court Supportive Housing SRO FY24"
+    },
+    {
+      "Account Code": "319611",
+      "Account Title": "Highbridge Overlook Supportive Housing FY24"
+    },
+    {
+      "Account Code": "319711",
+      "Account Title": "King Gardens FY24"
+    },
+    {
+      "Account Code": "319810",
+      "Account Title": "Bergen Saratoga Apartments FY24"
+    },
+    {
+      "Account Code": "319910",
+      "Account Title": "Livonia Commons FY24"
+    },
+    {
+      "Account Code": "320612",
+      "Account Title": "Legal Services for Foreclosure Prevention FY23"
+    },
+    {
+      "Account Code": "320613",
+      "Account Title": "Legal Services for Foreclosure Prevention FY24"
+    },
+    {
+      "Account Code": "320808",
+      "Account Title": "Counseling for Foreclosure Prevention FY23"
+    },
+    {
+      "Account Code": "320809",
+      "Account Title": "Counseling for Foreclosure Prevention FY24"
+    },
+    {
+      "Account Code": "320913",
+      "Account Title": "The Settlement House Program at Flagstone FY23"
+    },
+    {
+      "Account Code": "321501",
+      "Account Title": "Child & Adult Care Food Program at Flagstone FY24"
+    },
+    {
+      "Account Code": "323110",
+      "Account Title": "SRO CAMBA Gardens II FY24"
+    },
+    {
+      "Account Code": "323601",
+      "Account Title": "Maternal Infant Early Childhood Home Visit ARP FY23"
+    },
+    {
+      "Account Code": "323801",
+      "Account Title": "SAPT SUPP Prevention Community Coalitions FY23"
+    },
+    {
+      "Account Code": "324602",
+      "Account Title": "Maternal Infant Early Childhood Home Visit ARP Round 2 FY24"
+    },
+    {
+      "Account Code": "325615",
+      "Account Title": "Legal Services FY24"
+    },
+    {
+      "Account Code": "326112",
+      "Account Title": "Health Homes (COBRA) FY24"
+    },
+    {
+      "Account Code": "326608",
+      "Account Title": "HIV/STD/HCV Prevention and Related Services for Young Gay Men/YMSM FY24"
+    },
+    {
+      "Account Code": "326706",
+      "Account Title": "HIV/STD/HCV Prevention and Related Services for Women/WFWC FY24"
+    },
+    {
+      "Account Code": "327602",
+      "Account Title": "Rape Crisis Centers and Sexual Assault Program FY23"
+    },
+    {
+      "Account Code": "332102",
+      "Account Title": "Covid-19 Disaster Relief Technical Assistance Program FY23"
+    },
+    {
+      "Account Code": "332401",
+      "Account Title": "Public Safety Programs FY24"
+    },
+    {
+      "Account Code": "333405",
+      "Account Title": "Empire State Supportive Housing Initiative (Hegeman Op.) FY24"
+    },
+    {
+      "Account Code": "333505",
+      "Account Title": "Empire State Supportive Housing Initiative (Austin 147) Operating FY24"
+    },
+    {
+      "Account Code": "333602",
+      "Account Title": "ESSHI OMH Bronx Grove FY24"
+    },
+    {
+      "Account Code": "333702",
+      "Account Title": "ESHHI Bronx Grove PDG FY24"
+    },
+    {
+      "Account Code": "337701",
+      "Account Title": "Brownsville In Violence Out Program - DCJS FY23"
+    },
+    {
+      "Account Code": "340201",
+      "Account Title": "Albany Cornerstone - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340301",
+      "Account Title": "Boulevard - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340401",
+      "Account Title": "Brevoort - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340501",
+      "Account Title": "Howard Cornerstone - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340601",
+      "Account Title": "Penn-Wortman - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340701",
+      "Account Title": "Pink Houses - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340801",
+      "Account Title": "Sheepshead Bay - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "340901",
+      "Account Title": "Stuyvesant Gardens - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341001",
+      "Account Title": "Beacon 164 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341101",
+      "Account Title": "Beacon 166 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341201",
+      "Account Title": "Beacon 271 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341401",
+      "Account Title": "CAMBA Elite @ P.S. 3 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341501",
+      "Account Title": "CAMBA Kids Quest @ P.S. 91 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341601",
+      "Account Title": "CAMBA Kids Unlimited @ P.S. 92 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341701",
+      "Account Title": "CAMBA All Stars @ P.S. 114 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341801",
+      "Account Title": "CAMBA Creative Kids @ P.S. 139 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "341901",
+      "Account Title": "CAMBA Kids Unite @ P.S. 170 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "342001",
+      "Account Title": "CAMBA Kids Connection @ P.S. 249 - Child Care Stabilization Grant FY23"
+    },
+    {
+      "Account Code": "343101",
+      "Account Title": "Ukraine Supplemental Appropriation to Resettlement Agencies Program FY23"
+    },
+    {
+      "Account Code": "344101",
+      "Account Title": "Healthcare Worker Bonus Program FY23"
+    },
+    {
+      "Account Code": "500121",
+      "Account Title": "COMPASS Program at PS91 & PS92 FY24"
+    },
+    {
+      "Account Code": "500320",
+      "Account Title": "COMPASS Program at PS139 FY24"
+    },
+    {
+      "Account Code": "500612",
+      "Account Title": "SONYC at IS240 (Andries Hudde) FY24"
+    },
+    {
+      "Account Code": "500712",
+      "Account Title": "SONYC Program at MS246 (Walt Whitman) FY24"
+    },
+    {
+      "Account Code": "510832",
+      "Account Title": "COMPASS Program at PS170 FY24"
+    },
+    {
+      "Account Code": "510920",
+      "Account Title": "COMPASS Program at PS249 FY24"
+    },
+    {
+      "Account Code": "511440",
+      "Account Title": "Foster Care Prevention/FFK/Beacon269 FY24"
+    },
+    {
+      "Account Code": "512736",
+      "Account Title": "Beacon Com Ctr at PS361 FY24"
+    },
+    {
+      "Account Code": "513138",
+      "Account Title": "Beacon Community Center IS 271 (CTL) FY24"
+    },
+    {
+      "Account Code": "513139",
+      "Account Title": "Beacon Community Center IS 271 (CDBG) FY24"
+    },
+    {
+      "Account Code": "513227",
+      "Account Title": "Family Support Brooklyn 5 FY24"
+    },
+    {
+      "Account Code": "513228",
+      "Account Title": "Family Support Brooklyn 3 FY24"
+    },
+    {
+      "Account Code": "515719",
+      "Account Title": "Provision For Homeless Prev Services FY24"
+    },
+    {
+      "Account Code": "516518",
+      "Account Title": "Emergency Housing Facility (9 Unit) - 25 Winthrop FY24"
+    },
+    {
+      "Account Code": "516817",
+      "Account Title": "NY/NY III SSSH Population II-Chron Homeless Substance Abuse Active Users FY24"
+    },
+    {
+      "Account Code": "517719",
+      "Account Title": "Immigrant Opportunities Initiative FY24"
+    },
+    {
+      "Account Code": "519717",
+      "Account Title": "NY/NYIII SSSH Pop III Adults with Sub Use Disorder FY24"
+    },
+    {
+      "Account Code": "520218",
+      "Account Title": "Adolescent Literacy Program @ MS246 FY24"
+    },
+    {
+      "Account Code": "520724",
+      "Account Title": "Adult Literacy Services ESOL (CDBG) FY24"
+    },
+    {
+      "Account Code": "520725",
+      "Account Title": "Adult Literacy Services ESOL (CSBG) FY24"
+    },
+    {
+      "Account Code": "520817",
+      "Account Title": "LTW - Learning to Work Brooklyn Academy HS Transfer School FY24"
+    },
+    {
+      "Account Code": "521310",
+      "Account Title": "LTW - Learning to Work Brooklyn Bridge Academy Transfer School FY24"
+    },
+    {
+      "Account Code": "521410",
+      "Account Title": "LTW - Learning to Work South Shore YABC FY24"
+    },
+    {
+      "Account Code": "521511",
+      "Account Title": "LTW - Learning to Work Professional Pathways Transfer School FY24"
+    },
+    {
+      "Account Code": "522913",
+      "Account Title": "LTW - Learning to Work Cascades HS Transfer School FY24"
+    },
+    {
+      "Account Code": "523117",
+      "Account Title": "Beacon Program at IS 166 (Van Sicklen Community Middle School) FY24"
+    },
+    {
+      "Account Code": "523213",
+      "Account Title": "Boulevard Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "523313",
+      "Account Title": "Penn-Wortman Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "523410",
+      "Account Title": "Brevoort Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "524115",
+      "Account Title": "COMPASS Program at PS3 FY24"
+    },
+    {
+      "Account Code": "524215",
+      "Account Title": "COMPASS Program at PS114 FY24"
+    },
+    {
+      "Account Code": "524309",
+      "Account Title": "Adult Literacy Services ESOL Base Line FY24"
+    },
+    {
+      "Account Code": "524909",
+      "Account Title": "LTW - Learning to Work Brownsville HS Transfer School FY24"
+    },
+    {
+      "Account Code": "525122",
+      "Account Title": "Non Emergency Permanent Scatter Site Housing FY24"
+    },
+    {
+      "Account Code": "525215",
+      "Account Title": "Legacy Houses FY24"
+    },
+    {
+      "Account Code": "525310",
+      "Account Title": "Transitional Supportive Housing Program - 23 Winthrop FY24"
+    },
+    {
+      "Account Code": "525406",
+      "Account Title": "LTW - Learning to Work James Baldwin HS FY24"
+    },
+    {
+      "Account Code": "525606",
+      "Account Title": "LTW- Learning to Work Lower East Side Prep FY24"
+    },
+    {
+      "Account Code": "525806",
+      "Account Title": "LTW - Learning to Work Forsyth HS FY24"
+    },
+    {
+      "Account Code": "525906",
+      "Account Title": "Lead CBO Community School PS306 FY24"
+    },
+    {
+      "Account Code": "526408",
+      "Account Title": "Albany Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "526508",
+      "Account Title": "Stuyvesant Gardens I Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "526608",
+      "Account Title": "Sheepshead Bay Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "526708",
+      "Account Title": "Howard Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "526808",
+      "Account Title": "Cypress Hills Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "526908",
+      "Account Title": "Pink Houses Cornerstone Program FY24"
+    },
+    {
+      "Account Code": "527706",
+      "Account Title": "CAMBA's Bronx Health and Housing Initiative FY24"
+    },
+    {
+      "Account Code": "528208",
+      "Account Title": "Work Progress Program FY24"
+    },
+    {
+      "Account Code": "528307",
+      "Account Title": "LTW – Independence Transfer School FY24"
+    },
+    {
+      "Account Code": "528407",
+      "Account Title": "LTW – Judith Kaye Transfer School FY24"
+    },
+    {
+      "Account Code": "529308",
+      "Account Title": "Beacon Com Ctr at PS164 FY24"
+    },
+    {
+      "Account Code": "529610",
+      "Account Title": "21st Century Community Learning Center PS198 FY24"
+    },
+    {
+      "Account Code": "531702",
+      "Account Title": "Albany Cornerstone Discretionary - Block the Shot FY24"
+    },
+    {
+      "Account Code": "531803",
+      "Account Title": "Discretionary Beyond Hunger Food Program FY24"
+    },
+    {
+      "Account Code": "532503",
+      "Account Title": "H+H Seaview Estates FY24"
+    },
+    {
+      "Account Code": "533103",
+      "Account Title": "LTW - Franklin K. Lane YABC FY24"
+    },
+    {
+      "Account Code": "535902",
+      "Account Title": "Lead CBO Community School M510/01M458/Forsyth Satellite Academy FY24"
+    },
+    {
+      "Account Code": "536503",
+      "Account Title": "CAMBA One East Harlem FY24"
+    },
+    {
+      "Account Code": "540218",
+      "Account Title": "Anna Gonzalez Apts SRO (NYC DHS) FY24"
+    },
+    {
+      "Account Code": "540318",
+      "Account Title": "Supportive Hsing Anna Gonzalez Apts High Ser Need II (NYC DOHMH) FY24"
+    },
+    {
+      "Account Code": "540417",
+      "Account Title": "The Myrtle Ave Apts FY24"
+    },
+    {
+      "Account Code": "540516",
+      "Account Title": "Rugged Cross Supportive Housing FY24"
+    },
+    {
+      "Account Code": "540617",
+      "Account Title": "Supportive Housing High Ser Need I Morris Manor FY24"
+    },
+    {
+      "Account Code": "540717",
+      "Account Title": "SRO Support Morris Manor FY24"
+    },
+    {
+      "Account Code": "540817",
+      "Account Title": "SRO Support for Rugged Cross FY24"
+    },
+    {
+      "Account Code": "541115",
+      "Account Title": "730 Rockaway Ave Apts FY24"
+    },
+    {
+      "Account Code": "541311",
+      "Account Title": "SRO CAMBA Gardens I FY24"
+    },
+    {
+      "Account Code": "541614",
+      "Account Title": "1490 Dumont Ave Residences FY24"
+    },
+    {
+      "Account Code": "541813",
+      "Account Title": "Crooke Ave Apts FY24"
+    },
+    {
+      "Account Code": "541912",
+      "Account Title": "SRO Crooke Ave Apts FY24"
+    },
+    {
+      "Account Code": "542114",
+      "Account Title": "Flagstone Family Center FY24"
+    },
+    {
+      "Account Code": "542209",
+      "Account Title": "Flagstone Family Center SONYC Pilot Program FY24"
+    },
+    {
+      "Account Code": "542309",
+      "Account Title": "Flagstone SafeCare Family Services (CC) FY24"
+    },
+    {
+      "Account Code": "542406",
+      "Account Title": "Buckingham House SRO (Staten Island) FY24"
+    },
+    {
+      "Account Code": "542602",
+      "Account Title": "Opioid Overdose Prevention Program FY24"
+    },
+    {
+      "Account Code": "543211",
+      "Account Title": "Gabriel House FY24"
+    },
+    {
+      "Account Code": "543310",
+      "Account Title": "James Bryant Supportive Housing FY24"
+    },
+    {
+      "Account Code": "543411",
+      "Account Title": "CAMBA Gardens Supportive Housing - Population I FY24"
+    },
+    {
+      "Account Code": "543511",
+      "Account Title": "CAMBA Gardens Supportive Housing - Population III FY24"
+    },
+    {
+      "Account Code": "543611",
+      "Account Title": "CAMBA Gardens Supportive Housing - Population V FY24"
+    },
+    {
+      "Account Code": "543710",
+      "Account Title": "Justice Involved Supported Housing (SSHP) FY24"
+    },
+    {
+      "Account Code": "543808",
+      "Account Title": "Van Dyke Houses Supportive Housing - Population III FY24"
+    },
+    {
+      "Account Code": "543908",
+      "Account Title": "CAMBA Gardens II Supportive Housing FY24"
+    },
+    {
+      "Account Code": "544111",
+      "Account Title": "HOPWA Permanent Supportive Housing for Homeless Single Adults/Families - SPH1 FY24"
+    },
+    {
+      "Account Code": "544211",
+      "Account Title": "HOPWA Perm. Supportive Housing for Single Adults w/ Substance Abuse Disorder - SPH2 FY24"
+    },
+    {
+      "Account Code": "544311",
+      "Account Title": "HOPWA Perm. Supportive Housing for Single Adults w/ Substance Abuse Disorder - SPH3 FY24"
+    },
+    {
+      "Account Code": "544411",
+      "Account Title": "HOPWA Perm. Supportive Housing for Single Adults w/ Substance Abuse Disorder - SPH4 FY24"
+    },
+    {
+      "Account Code": "545109",
+      "Account Title": "CAMBA Gardens II Permanent Supportive Housing FY24"
+    },
+    {
+      "Account Code": "545205",
+      "Account Title": "Van Dyke III Supportive Housing FY24"
+    },
+    {
+      "Account Code": "545311",
+      "Account Title": "Citywide Scattered Site Housing Program (48 Unit) FY24"
+    },
+    {
+      "Account Code": "545508",
+      "Account Title": "Supportive Housing for Homeless & At-Risk Persons w. Clinical Conditions (15/15) FY24"
+    },
+    {
+      "Account Code": "545704",
+      "Account Title": "Congregate Supportive Housing NY 15/15 T Building  FY24"
+    },
+    {
+      "Account Code": "545804",
+      "Account Title": "CAMBA Beach 21st St FY24"
+    },
+    {
+      "Account Code": "546110",
+      "Account Title": "SRO CAMBA Harlem Housing (James Bryant) FY24"
+    },
+    {
+      "Account Code": "546210",
+      "Account Title": "SRO CAMBA Harlem Housing (Vincent Cyrus Plaza) FY24"
+    },
+    {
+      "Account Code": "546606",
+      "Account Title": "Worker Cooperative Business Development Initiative FY24"
+    },
+    {
+      "Account Code": "547106",
+      "Account Title": "James Bryant Houses (9 Units) FY24"
+    },
+    {
+      "Account Code": "549007",
+      "Account Title": "The Park Avenue Residence FY24"
+    },
+    {
+      "Account Code": "550029",
+      "Account Title": "Park Slope Shelter for Women FY24"
+    },
+    {
+      "Account Code": "551025",
+      "Account Title": "Broadway House Women's Shelter FY24"
+    },
+    {
+      "Account Code": "552024",
+      "Account Title": "Atlantic House Men's Shelter FY24"
+    },
+    {
+      "Account Code": "552106",
+      "Account Title": "Evergreen Family Shelter FY24"
+    },
+    {
+      "Account Code": "553023",
+      "Account Title": "The Gathering Place Drop-In Center-Single Shelter FY24"
+    },
+    {
+      "Account Code": "555017",
+      "Account Title": "CAMBA Opportunity House FY24"
+    },
+    {
+      "Account Code": "556014",
+      "Account Title": "Magnolia House Women's Shelter FY24"
+    },
+    {
+      "Account Code": "557010",
+      "Account Title": "The Landing Family Shelter FY24"
+    },
+    {
+      "Account Code": "558010",
+      "Account Title": "The Kensington Family Shelter FY24"
+    },
+    {
+      "Account Code": "559009",
+      "Account Title": "Kings Inn Shelter FY24"
+    },
+    {
+      "Account Code": "560004",
+      "Account Title": "Rising Up Men's Shelter FY24"
+    },
+    {
+      "Account Code": "560306",
+      "Account Title": "COMPASS Program at PS139 (City Council) FY24"
+    },
+    {
+      "Account Code": "560406",
+      "Account Title": "COMPASS Program at PS249 (City Council) FY24"
+    },
+    {
+      "Account Code": "560505",
+      "Account Title": "COMPASS Program at PS170 (City Council) FY24"
+    },
+    {
+      "Account Code": "561102",
+      "Account Title": "Bronx Grove (15/15) FY24"
+    },
+    {
+      "Account Code": "561202",
+      "Account Title": "Simba Simbi FY24"
+    },
+    {
+      "Account Code": "565108",
+      "Account Title": "Homeless Prevention - HomeBase I (HRA) FY24"
+    },
+    {
+      "Account Code": "565208",
+      "Account Title": "Homeless Prevention - HomeBase I (ESG) FY24"
+    },
+    {
+      "Account Code": "566108",
+      "Account Title": "Homeless Prevention - HomeBase II (HRA) FY24"
+    },
+    {
+      "Account Code": "566208",
+      "Account Title": "Homeless Prevention - HomeBase II (ESG) FY24"
+    },
+    {
+      "Account Code": "567108",
+      "Account Title": "Homeless Prevention - HomeBase SI (HRA) FY24"
+    },
+    {
+      "Account Code": "567208",
+      "Account Title": "Homeless Prevention - HomeBase SI (ESG) FY24"
+    },
+    {
+      "Account Code": "572203",
+      "Account Title": "Saturday Night Lights (Howard) FY24"
+    },
+    {
+      "Account Code": "572303",
+      "Account Title": "Saturday Night Lights (Pink Houses) FY24"
+    },
+    {
+      "Account Code": "572402",
+      "Account Title": "Saturday Night Lights (Beacon 271) FY24"
+    },
+    {
+      "Account Code": "572502",
+      "Account Title": "Saturday Night Lights (Albany Community Center) FY24"
+    },
+    {
+      "Account Code": "577101",
+      "Account Title": "Scattered Site Housing Services to Persons with AIDS (270 Units) FY24"
+    },
+    {
+      "Account Code": "590106",
+      "Account Title": "Vincent Cyrus Plaza (HRA) FY24"
+    },
+    {
+      "Account Code": "613311",
+      "Account Title": "SYEP Summer Bridge Virtual (OY) FY24"
+    },
+    {
+      "Account Code": "613312",
+      "Account Title": "SYEP Summer Bridge Virtual (YY) FY24"
+    },
+    {
+      "Account Code": "613406",
+      "Account Title": "School-Based CareerReady SYEP FY24"
+    },
+    {
+      "Account Code": "700524",
+      "Account Title": "Nutrition Outreach and Education (NOEP) FY24"
+    },
+    {
+      "Account Code": "702719",
+      "Account Title": "Supportive Counseling & Family Stabilization (15-SCG-655) FY24"
+    },
+    {
+      "Account Code": "703424",
+      "Account Title": "Match Grant Program (USCRI) FY23"
+    },
+    {
+      "Account Code": "706329",
+      "Account Title": "Entrepreneurial Assistance Program FY24"
+    },
+    {
+      "Account Code": "707018",
+      "Account Title": "Reception & Placement Program (R & P) FY23"
+    },
+    {
+      "Account Code": "707213",
+      "Account Title": "Food and Nutrition Services (11-FNS-655) FY24"
+    },
+    {
+      "Account Code": "709708",
+      "Account Title": "Beacon Program at IS 166 Support FY24"
+    },
+    {
+      "Account Code": "710415",
+      "Account Title": "Leading to College FY24"
+    },
+    {
+      "Account Code": "712410",
+      "Account Title": "Short - Term Housing Program FY24"
+    },
+    {
+      "Account Code": "712509",
+      "Account Title": "Case Management & Health Education Services (CHES) FY24"
+    },
+    {
+      "Account Code": "712706",
+      "Account Title": "Nourish New York Initiative Program FY24"
+    },
+    {
+      "Account Code": "712804",
+      "Account Title": "Remote Learning in Family Homeless Shelter FY24"
+    },
+    {
+      "Account Code": "713217",
+      "Account Title": "Emergency Food & Shelter Program Phase 40 FY24"
+    },
+    {
+      "Account Code": "713815",
+      "Account Title": "Housing Counseling Program FY24"
+    },
+    {
+      "Account Code": "716517",
+      "Account Title": "Jobs to Build On FY24"
+    },
+    {
+      "Account Code": "718509",
+      "Account Title": "Against Sexual Assault Services FY24"
+    },
+    {
+      "Account Code": "725809",
+      "Account Title": "CAMBA Legal Services Program Support Grant FY24"
+    },
+    {
+      "Account Code": "726001",
+      "Account Title": "NYSERDA Regional Clean Energy Hub FY24"
+    },
+    {
+      "Account Code": "726704",
+      "Account Title": "The Bedford FY24"
+    },
+    {
+      "Account Code": "728212",
+      "Account Title": "Highbridge Terrace Supportive Housing Program FY24"
+    },
+    {
+      "Account Code": "728605",
+      "Account Title": "CAMP Coalition Building for LGBTQ & Youth FY24"
+    },
+    {
+      "Account Code": "729608",
+      "Account Title": "Immigration Services CSBG FY24"
+    },
+    {
+      "Account Code": "729909",
+      "Account Title": "LEAP Program FY24"
+    },
+    {
+      "Account Code": "731104",
+      "Account Title": "College Access Program Support FY24"
+    },
+    {
+      "Account Code": "732104",
+      "Account Title": "Settlement Houses Community Assistance Program FY24"
+    },
+    {
+      "Account Code": "732302",
+      "Account Title": "Brooklyn 3D - Drive Down Diabetes FY24"
+    },
+    {
+      "Account Code": "732502",
+      "Account Title": "Apex Place Social Services FY 24"
+    },
+    {
+      "Account Code": "732602",
+      "Account Title": "Seaview Estates IHG FY24"
+    },
+    {
+      "Account Code": "732803",
+      "Account Title": "Boulevard Houses Social Services FY24"
+    },
+    {
+      "Account Code": "732902",
+      "Account Title": "Cure Violence Prevention Program FY24"
+    },
+    {
+      "Account Code": "733005",
+      "Account Title": "Social Services Support Program (Our Space) FY24"
+    },
+    {
+      "Account Code": "733803",
+      "Account Title": "CAMBA College Bound Expansion Pinkerton FY 23"
+    },
+    {
+      "Account Code": "733901",
+      "Account Title": "Harlem Children's Zone Food Pantry Grant FY24"
+    },
+    {
+      "Account Code": "734206",
+      "Account Title": "CHV - TriState Capital Bank Grant FY23"
+    },
+    {
+      "Account Code": "734403",
+      "Account Title": "Maternal Infant Health Program FY24"
+    },
+    {
+      "Account Code": "734508",
+      "Account Title": "CHV - Castleton Park Social Services FY24"
+    },
+    {
+      "Account Code": "735110",
+      "Account Title": "King Gardens Security FY24"
+    },
+    {
+      "Account Code": "735208",
+      "Account Title": "Rugged Cross Security FY24"
+    },
+    {
+      "Account Code": "736408",
+      "Account Title": "City Council - Ending the Epidemic FY24"
+    },
+    {
+      "Account Code": "737104",
+      "Account Title": "Clinical Mental Health Services and Staff Training FY23"
+    },
+    {
+      "Account Code": "737905",
+      "Account Title": "Small Business Services Grant FY23"
+    },
+    {
+      "Account Code": "738402",
+      "Account Title": "Social Workers Training Program NYCT FY24"
+    },
+    {
+      "Account Code": "738601",
+      "Account Title": "English To Work - ArgoGroup FY23"
+    },
+    {
+      "Account Code": "738901",
+      "Account Title": "Ready Readers Phase II FY24"
+    },
+    {
+      "Account Code": "739102",
+      "Account Title": "CAMBA College Bound - McCance FY23"
+    },
+    {
+      "Account Code": "739205",
+      "Account Title": "Center for Community Health Navigation FY24"
+    },
+    {
+      "Account Code": "742902",
+      "Account Title": "School Based Conflict Mediation Services @ I.S. 55 FY24"
+    },
+    {
+      "Account Code": "744001",
+      "Account Title": "Transforming Afghan Lives FY23"
+    },
+    {
+      "Account Code": "744502",
+      "Account Title": "Workforce Development Low-Income Communities FY24"
+    },
+    {
+      "Account Code": "744802",
+      "Account Title": "The Future of Social Work: The Settlement House Network and Multilingual Communities FY24"
+    },
+    {
+      "Account Code": "745202",
+      "Account Title": "Brooklyn 3-D Diabetes Project FY24"
+    },
+    {
+      "Account Code": "745401",
+      "Account Title": "Support - Pels Grant FY 23"
+    },
+    {
+      "Account Code": "745501",
+      "Account Title": "Light Touch Coordination Program FY24"
+    },
+    {
+      "Account Code": "746104",
+      "Account Title": "Belmont Daniel FY24"
+    },
+    {
+      "Account Code": "746401",
+      "Account Title": "Fuel For 50 (Kings Inn) FY24"
+    },
+    {
+      "Account Code": "746501",
+      "Account Title": "Fuel For 50 (Park Avenue) FY24"
+    },
+    {
+      "Account Code": "746602",
+      "Account Title": "Fuel for 50 (Evergreen) FY24"
+    },
+    {
+      "Account Code": "746701",
+      "Account Title": "Robin Hood TA Project FY24"
+    },
+    {
+      "Account Code": "747301",
+      "Account Title": "Population Health Improvement Program FY23"
+    },
+    {
+      "Account Code": "747401",
+      "Account Title": "Improving Family & Community Acceptance of LGBTQ+ Youth FY24"
+    },
+    {
+      "Account Code": "751101",
+      "Account Title": "NaviGAYte Brooklyn 2.0 FY23"
+    },
+    {
+      "Account Code": "752902",
+      "Account Title": "School Based Conflict Mediation Services @ Canarsie HS FY24"
+    },
+    {
+      "Account Code": "771901",
+      "Account Title": "NYC Cancer Network in Neighborhoods for Equity & Community Translation FY23"
+    },
+    {
+      "Account Code": "773503",
+      "Account Title": "YES Bed Stuy FY24"
+    },
+    {
+      "Account Code": "773902",
+      "Account Title": "Preferred Communities - Ukrainian Supplemental FY23"
+    },
+    {
+      "Account Code": "791205",
+      "Account Title": "CAMBA College Bound Support - Frueauff FY23"
+    },
+    {
+      "Account Code": "791502",
+      "Account Title": "Brownsville Safety Alliance Hub - Mobile Response Lead FY24"
+    },
+    {
+      "Account Code": "901000",
+      "Account Title": "1720 Holding Corp"
+    }
+  ],
+  "Vendor": [
+    {
+      "Vendor Name": "Budget Business",
+      "Telephone #": "(718) 633-8990",
+      "Email": "bayridgemn@aol.com",
+      "Website Ref": "http://www.Biggestbook.com",
+      "Contact": "Rocky"
+    },
+    {
+      "Vendor Name": "ISE Office Plus (M/WBE)",
+      "Telephone #": "(718) 324-0006",
+      "Email": "dand@iseop.com",
+      "Website Ref": "http://www.iseop.com/",
+      "Contact": "Dan Damon"
+    },
+    {
+      "Vendor Name": "Office Depot"
+    },
+    {
+      "Vendor Name": " (Essensa)",
+      "Telephone #": "(800) 269- 6888",
+      "Email": "N/A",
+      "Website Ref": "http://officedepot.com",
+      "Contact": "Beth "
+    },
+    {
+      "Vendor Name": "Staples ",
+      "Website Ref": "https://www.staplesadvantage.com/ "
+    },
+    {
+      "Vendor Name": "(Essensa)",
+      "Telephone #": "(877) 826-7755",
+      "Email": "N/A",
+      "Contact": "Cooper Boyd"
+    },
+    {
+      "Vendor Name": "R&B Janitorial Supply ",
+      "Telephone #": "(347) 401-8103",
+      "Email": "Rnbjanitorial@gmail.com",
+      "Website Ref": "N/A (Price List)",
+      "Contact": "Ruban"
+    },
+    {
+      "Vendor Name": "Best Buy ",
+      "Telephone #": "(612) 429-0378",
+      "Email": "Joel.lutz@bestbuy.com",
+      "Website Ref": "www.Bestbuy.com",
+      "Contact": "Joel Lutz"
+    },
+    {
+      "Vendor Name": "B&H Photo",
+      "Telephone #": "(212) 239-7503",
+      "Email": "laureng@bhphoto.com",
+      "Website Ref": "www.Bhphotovideo.com",
+      "Contact": "Lauren Goldberg "
+    }
+  ],
+  "glCode": [
+    {
+      "code": "6010",
+      "description": "Accounting & Auditing Fees"
+    },
+    {
+      "code": "6015",
+      "description": "Bank Fees"
+    },
+    {
+      "code": "6020",
+      "description": "Payroll Services"
+    },
+    {
+      "code": "6025",
+      "description": "Legal Fees"
+    },
+    {
+      "code": "6030",
+      "description": "Recreation & Activity Fees"
+    },
+    {
+      "code": "6035",
+      "description": "Other Fees"
+    },
+    {
+      "code": "6036",
+      "description": "Referral Fees"
+    },
+    {
+      "code": "6045",
+      "description": "Finger Printing Fee"
+    },
+    {
+      "code": "6046",
+      "description": "Background Check Fee"
+    },
+    {
+      "code": "6060",
+      "description": "Interco Admin Costs"
+    },
+    {
+      "code": "6070",
+      "description": "Independent Contractors/Consultants"
+    },
+    {
+      "code": "6072",
+      "description": "IC Medical Services"
+    },
+    {
+      "code": "6073",
+      "description": "CI Acupuncturist"
+    },
+    {
+      "code": "6080",
+      "description": "Contract Temporary Help"
+    },
+    {
+      "code": "6090",
+      "description": "Subcontracts under $25,000"
+    },
+    {
+      "code": "6092",
+      "description": "Subcontracts - Medical"
+    },
+    {
+      "code": "6100",
+      "description": "Supplies Office"
+    },
+    {
+      "code": "6110",
+      "description": "Supplies Instructional"
+    },
+    {
+      "code": "6120",
+      "description": "Supplies Program"
+    },
+    {
+      "code": "6130",
+      "description": "Supplies Computer/Software"
+    },
+    {
+      "code": "6140",
+      "description": "System License/Maintenance"
+    },
+    {
+      "code": "6150",
+      "description": "Books & Subscriptions"
+    },
+    {
+      "code": "6160",
+      "description": "Supplies Medical"
+    },
+    {
+      "code": "6170",
+      "description": "Program Food/Meals"
+    },
+    {
+      "code": "6175",
+      "description": "Fuel Vehicle"
+    },
+    {
+      "code": "6180",
+      "description": "Supplies Cleaning/Maintenance"
+    },
+    {
+      "code": "6181",
+      "description": "Supplies Linen"
+    },
+    {
+      "code": "6195",
+      "description": "Supplies Client Communications/Telephone"
+    },
+    {
+      "code": "6300",
+      "description": "Telephone Wireless"
+    },
+    {
+      "code": "6310",
+      "description": "Internet Services"
+    },
+    {
+      "code": "6330",
+      "description": "Telephone Residences"
+    },
+    {
+      "code": "6350",
+      "description": "Printing and Duplication"
+    },
+    {
+      "code": "6400",
+      "description": "Postage/Shipping"
+    },
+    {
+      "code": "6420",
+      "description": "Recruitment Advertising Staff"
+    },
+    {
+      "code": "6500",
+      "description": "Recruitment Advertising Clients"
+    },
+    {
+      "code": "6510",
+      "description": "Rent"
+    },
+    {
+      "code": "7110",
+      "description": "Rent Clients"
+    },
+    {
+      "code": "7111",
+      "description": "Client Security Deposits"
+    },
+    {
+      "code": "7112",
+      "description": "Rent - Storage"
+    },
+    {
+      "code": "7113",
+      "description": "Rent Parking Automobile"
+    },
+    {
+      "code": "7115",
+      "description": "Forfeited Security Deposits - Program"
+    }
+  ]
+}
+

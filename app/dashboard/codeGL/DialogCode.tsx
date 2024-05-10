@@ -1,8 +1,9 @@
 "use client";
 import {GLCode} from "@prisma/client";
-import {Dialog, DialogActions, DialogContent, DialogTitle} from "@mui/material";
+import {Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, TextField} from "@mui/material";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {LoadingButton} from "@mui/lab";
 
 interface DialogCodeProps {
     open: boolean;
@@ -59,18 +60,33 @@ export default function DialogCode({open, onClose, code}: DialogCodeProps) {
         }
     }
 
-    return <Dialog open={open} onClose={() => handleClose(false)}>
+    return <Dialog
+        open={open}
+        onClose={() => handleClose(false)}
+        fullWidth
+        maxWidth={'sm'}
+        component={'form'}
+        onSubmit={handleSubmit}
+    >
         <DialogTitle>
             {code ? ` G/L Code ${code.code}` : 'Add a new  G/L Code'}
-            <button onClick={() => handleClose(false)}>Close</button>
         </DialogTitle>
         <DialogContent>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder={'Code'} required value={glCode} onChange={(event) => setGLCode(event.target.value)}/>
-                <input type="text" placeholder={'Name'} required value={name} onChange={(event) => setName(event.target.value)}/>
-                <button type={'submit'}>Save</button>
-            </form>
+            <Grid container item spacing={2} xs={12} sx={{mt: 0}}>
+                <Grid item xs={6}>
+                    <TextField fullWidth size={'small'} variant={'outlined'} label={'Code'} required value={glCode}
+                               onChange={(event) => setGLCode(event.target.value)}/>
+                </Grid>
+                <Grid item xs={6}>
+                    <TextField fullWidth size={'small'} variant={'outlined'} label={'Name'} required value={name}
+                               onChange={(event) => setName(event.target.value)}/>
+                </Grid>
+            </Grid>
         </DialogContent>
+        <DialogActions>
+            <Button onClick={() => handleClose(false)}>Cancel</Button>
+            <LoadingButton type={'submit'} variant={'contained'}>Save</LoadingButton>
+        </DialogActions>
     </Dialog>
 
 }

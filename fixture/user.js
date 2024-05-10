@@ -10,6 +10,7 @@ async function user() {
                 lastName: 'Doe',
                 email: 'john.doe@gmail.com',
                 password: 'password',
+                role: 'ADMIN',
             }
         })
 

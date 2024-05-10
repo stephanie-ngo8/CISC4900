@@ -1,8 +1,9 @@
 "use client";
 import {PrismaClient, User} from "@prisma/client";
-import {Dialog, DialogContent, DialogTitle} from "@mui/material";
+import {Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, TextField} from "@mui/material";
 import {useEffect, useState} from "react";
 import axios from "axios";
+import {LoadingButton} from "@mui/lab";
 
 interface DialogUserProps {
     open: boolean;
@@ -17,6 +18,7 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
     const [lastName, setLastName] = useState<string>('');
     const [email, setEmail] = useState<string>('');
     const [password, setPassword] = useState<string>('');
+    const [role, setRole] = useState<string>('');
 
     useEffect(() => {
         if (user) {
@@ -24,6 +26,7 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
             setLastName(user.lastName);
             setEmail(user.email);
             setPassword(user.password);
+            setRole(user.role);
         }
     }, [user]);
 
@@ -33,6 +36,7 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
         setFirstName('');
         setLastName('');
         setPassword('');
+        setRole('')
     }
 
     async function handleSubmit(event: any) {
@@ -45,7 +49,8 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
                     email,
                     password,
                     firstName,
-                    lastName
+                    lastName,
+                    role
                 }, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -56,7 +61,8 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
                     email,
                     password,
                     firstName,
-                    lastName
+                    lastName,
+                    role
                 }, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`
@@ -70,20 +76,45 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
         }
     }
 
-    return <Dialog open={open} onClose={handleClose}>
+    return <Dialog
+        open={open}
+        onClose={handleClose}
+        fullWidth
+        maxWidth={'sm'}
+        component={'form'}
+        onSubmit={handleSubmit}
+    >
         <DialogTitle>
-            {user ? `Edit user ${user.id}` : 'Add a new user'}
-            <button onClick={() => handleClose(false)}>Close</button>
+            {user ? `Edit user ${user.email}` : 'Add a new user'}
         </DialogTitle>
         <DialogContent>
-            <form onSubmit={handleSubmit}>
-                <input type="text" placeholder={'First name'} required value={firstName} onChange={(event) => setFirstName(event.target.value)}/>
-                <input type="text" placeholder={'Last name'} required value={lastName} onChange={(event) => setLastName(event.target.value)}/>
-                <input type="email" placeholder={'Email'} required value={email} onChange={(event) => setEmail(event.target.value)}/>
-                <input type="password" placeholder={'Password'} required value={password} onChange={(event) => setPassword(event.target.value)}/>
-                <button type={'submit'}>Save</button>
-            </form>
+            <Grid container item xs={12} spacing={2} sx={{mt: 0}}>
+                <Grid item xs={6}>
+                    <TextField fullWidth size={'small'} label={'First name'} required value={firstName}
+                               onChange={(event) => setFirstName(event.target.value)}/>
+                </Grid>
+                <Grid item xs={6}>
+                    <TextField fullWidth size={'small'} label={'Last name'} required value={lastName}
+                               onChange={(event) => setLastName(event.target.value)}/>
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField fullWidth size={'small'} label={'Email'} type={'email'} required value={email}
+                               onChange={(event) => setEmail(event.target.value)}/>
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField fullWidth size={'small'} label={'Password'} required value={password}
+                               onChange={(event) => setPassword(event.target.value)}/>
+                </Grid>
+                <Grid item xs={12}>
+                    <TextField fullWidth size={'small'} label={'Role'} required value={role}
+                               onChange={(event) => setRole(event.target.value)}/>
+                </Grid>
+            </Grid>
         </DialogContent>
+        <DialogActions>
+            <Button onClick={() => handleClose(false)}>Cancel</Button>
+            <LoadingButton loading={false} type={'submit'} variant={'contained'}>Save</LoadingButton>
+        </DialogActions>
     </Dialog>
 
 }

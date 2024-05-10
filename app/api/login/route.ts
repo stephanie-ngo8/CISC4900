@@ -31,6 +31,7 @@ export async function POST(request: Request) {
     console.log(user[0], token);
 
     return Response.json({
-        token: token
+        token: token,
+        user: user[0]
     })
 }

@@ -46,6 +46,7 @@ export async function PUT(request: Request) {
             password: body.password,
             firstName: body.firstName,
             lastName: body.lastName,
+            role: body.role
         }
     });
 
@@ -68,7 +69,8 @@ export async function POST(request: Request) {
             email: body.email,
             password: body.password,
             firstName: body.firstName,
-            lastName: body.lastName
+            lastName: body.lastName,
+            role: body.role
         }
     });
 

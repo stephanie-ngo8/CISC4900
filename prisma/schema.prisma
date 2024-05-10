@@ -14,33 +14,127 @@ datasource db {
 }
 
 model User {
-  id        String    @id @default(uuid())
-  email     String    @unique
+  id        String     @id @default(uuid())
+  email     String     @unique
   firstName String
   lastName  String
   password  String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
   deletedAt DateTime?
-  deleted   Boolean   @default(false)
+  deleted   Boolean    @default(false)
+  purchases Purchase[] @relation("userToPurchase")
+  approved  Purchase[] @relation("userApproveByToPurchase")
+  buyed     Purchase[] @relation("userPlaceByToPurchase")
+  received  Purchase[] @relation("userReceivedByToPurchase")
+  rejected  Purchase[] @relation("userRejectByToPurchase")
+  role      String?
 }
 
 model GLCode {
-  id        Int       @id @default(autoincrement())
-  code      String    @unique
+  id        Int           @id @default(autoincrement())
+  code      String        @unique
   name      String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  createdAt DateTime      @default(now())
+  updatedAt DateTime      @updatedAt
   deletedAt DateTime?
-  deleted   Boolean   @default(false)
+  deleted   Boolean       @default(false)
+  items     ItemPricing[]
 }
 
 model Department {
-  id        Int       @id @default(autoincrement())
-  code      String    @unique
+  id         Int          @id @default(autoincrement())
+  code       String       @unique
+  name       String
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+  deletedAt  DateTime?
+  deleted    Boolean      @default(false)
+  allocation Allocation[]
+}
+
+model Vendor {
+  id        Int        @id @default(autoincrement())
   name      String
-  createdAt DateTime  @default(now())
-  updatedAt DateTime  @updatedAt
+  phone     String?
+  email     String?
+  contact   String?
+  website   String?
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
   deletedAt DateTime?
-  deleted   Boolean   @default(false)
+  deleted   Boolean    @default(false)
+  purchase  Purchase[]
+}
+
+model DeliveryContacts {
+  id       Int        @id @default(autoincrement())
+  name     String?
+  phone    String?
+  address  String?
+  comment  String?
+  purchase Purchase[]
+}
+
+model ItemPricing {
+  id          Int     @id @default(autoincrement())
+  itemNumber  String?
+  description String?
+  quantity    Int?
+  unitPrice   Float?
+
+  purchase   Purchase? @relation(fields: [purchaseId], references: [id])
+  purchaseId String?
+  gLCode     GLCode?   @relation(fields: [gLCodeId], references: [id])
+  gLCodeId   Int?
+}
+
+model Allocation {
+  id          Int    @id @default(autoincrement())
+  pourcentage Float?
+  amount      Float?
+
+  purchase     Purchase?   @relation(fields: [purchaseId], references: [id])
+  purchaseId   String?
+  department   Department? @relation(fields: [departmentId], references: [id])
+  departmentId Int?
+}
+
+model Purchase {
+  id     String  @id @default(uuid())
+  user   User?   @relation("userToPurchase", fields: [userId], references: [id])
+  userId String?
+
+  items        ItemPricing[]
+  allocation   Allocation[]
+  taxes        Float?
+  shippingCost Float?
+
+  deliveryContacts   DeliveryContacts? @relation(fields: [deliveryContactsId], references: [id])
+  deliveryContactsId Int?
+  vendor             Vendor?           @relation(fields: [vendorId], references: [id])
+  vendorId           Int?
+  status             String
+  deleted            Boolean?          @default(false)
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+  deletedAt          DateTime?
+
+  submittedAt DateTime?
+
+  approvedBy   User?     @relation("userApproveByToPurchase", fields: [approvedById], references: [id])
+  approvedById String?
+  approvedAt   DateTime?
+
+  rejectedBy   User?     @relation("userRejectByToPurchase", fields: [rejectedById], references: [id])
+  rejectedById String?
+  rejectedAt   DateTime?
+
+  purchacePlaceBy   User?     @relation("userPlaceByToPurchase", fields: [purchacePlaceById], references: [id])
+  purchacePlaceById String?
+  purchacePlaceAt   DateTime?
+
+  receivedBy   User?     @relation("userReceivedByToPurchase", fields: [receivedById], references: [id])
+  receivedById String?
+  receivedAt   DateTime?
 }

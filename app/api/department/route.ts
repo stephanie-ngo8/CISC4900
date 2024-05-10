@@ -4,6 +4,8 @@ import {tokenParse} from "../tokenParse";
 export const dynamic = 'force-dynamic' // defaults to auto
 const prisma = new PrismaClient();
 export async function GET(request: Request) {
+    const { searchParams } = new URL(request.url)
+    const autocomplete = searchParams.get('autocomplete');
     const token = tokenParse(request);
 
     if (!token) {
@@ -17,6 +19,15 @@ export async function GET(request: Request) {
             deleted: false
         }
     })
+
+    if (autocomplete) {
+        return Response.json(department.map(glCode => {
+            return {
+                id: glCode.id,
+                name: glCode.code + "-" + glCode.name
+            }
+        }))
+    }
 
     return Response.json(department)
 }

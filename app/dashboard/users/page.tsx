@@ -10,6 +10,11 @@ import Paper from '@mui/material/Paper';
 import {useEffect, useState} from "react";
 import axios from "axios";
 import DialogUser from "@/app/dashboard/users/DialogUser";
+import Typography from "@mui/material/Typography";
+import {Button} from "@mui/material";
+import {Add, Delete, Visibility} from "@mui/icons-material";
+import IconButton from "@mui/material/IconButton";
+import dayjs from "dayjs";
 export default function Users() {
     const [data, setData] = useState([]);
     const [userToEdit, setUserToEdit] = useState(null);
@@ -49,10 +54,15 @@ export default function Users() {
     }
 
     return (
-        <Box sx={{width: '100%'}}>
-            <button onClick={() => setOpen(true)}>Add a new user</button>
-            <TableContainer component={Paper} variant={'outlined'}>
-                <Table sx={{minWidth: 650}} size="small" aria-label="a dense table">
+        <Box sx={{p: 3, overflow: 'auto', width: '100%'}}>
+            <TableContainer component={Paper} elevation={3} sx={{width: '100%'}}>
+                <Box sx={{p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
+                    <Typography variant={'h6'}>
+                        Users
+                    </Typography>
+                    <Button variant={'outlined'} startIcon={<Add/>} onClick={() => setOpen(true)}>Add a new user</Button>
+                </Box>
+                <Table sx={{width: '100%'}} size="small" aria-label="a dense table">
                     <TableHead>
                         <TableRow>
                             <TableCell>Identifiant</TableCell>
@@ -76,16 +86,26 @@ export default function Users() {
                                 </TableCell>
                                 <TableCell align="right">{row.firstName}</TableCell>
                                 <TableCell align="right">{row.lastName}</TableCell>
-                                <TableCell align="right">{row.email}</TableCell>
-                                <TableCell align="right">{row.updatedAt}</TableCell>
-                                <TableCell align="right">{row.createdAt}</TableCell>
-                                <TableCell align="right" sx={{fontStyle: 'italic'}}>nothing</TableCell>
+                                <TableCell align="right">{
+                                    <a href={
+                                        `mailto:${row.email}`
+                                    } >{row.email}</a>
+                                }</TableCell>
+                                <TableCell align="right">{dayjs(row.updatedAt).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
+                                <TableCell align="right">{dayjs(row.createdAt).format('YYYY-MM-DD HH:mm:ss')}</TableCell>
+                                <TableCell align="right" sx={{fontStyle: 'italic'}}>
+                                    {row.role}
+                                </TableCell>
                                 <TableCell align="right">
-                                    <button onClick={() => {
+                                    <IconButton size={'small'} onClick={() => {
                                         setUserToEdit(row);
                                         setOpen(true);
-                                    }}>Update</button>
-                                    <button onClick={async () => deleteUser(row.id)}>Delete</button>
+                                    }}>
+                                        <Visibility fontSize={'small'}/>
+                                    </IconButton>
+                                    <IconButton size={'small'} onClick={async () => deleteUser(row.id)}>
+                                        <Delete fontSize={'small'}/>
+                                    </IconButton>
                                 </TableCell>
                             </TableRow>
                         ))}
