@@ -31,7 +31,7 @@ export default function Login() {
     return (
         <Grid container item xs={12} sx={{height: '100%'}} p={0}>
             <Grid container item xs={8} sx={{bgcolor: 'whitesmoke', height: '100%'}} alignContent={'center'} justifyContent={'center'}>
-                <img src={'https://demos.themeselection.com/marketplace/materio-mui-nextjs-admin-template/demo-1/images/illustrations/auth/v2-login-light.png'} alt={'login'} style={{width: 'auto', height: '60%'}}/>
+                <img src={'./CAMBA_FullColor.png'} alt={'login'} style={{width: 'auto', height: '40%'}}/>
             </Grid>
             <Grid container item xs={4} sx={{height: '100%'}} component={'form'} alignContent={
                 'center'
