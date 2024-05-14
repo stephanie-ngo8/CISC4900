@@ -19,6 +19,7 @@ export default function Login() {
                 localStorage.setItem('token', response.data.token);
                 localStorage.setItem('name', response.data.user.firstName + ' ' + response.data.user.lastName);
                 localStorage.setItem('email', response.data.user.email);
+                localStorage.setItem('role', response.data.user.role)
                 window.location.href = '/dashboard';
             } else {
                 setIsError(true);
@@ -37,8 +38,8 @@ export default function Login() {
                 'center'
             } onSubmit={handleSubmit} justifyContent={'center'} spacing={2} p={2} textAlign={'center'}>
                 <Grid item xs={12}>
-                    <h1>Welcome to Purchase</h1>
-                    <p>Please sign-in to your account and start the adventure</p>
+                    <h1>Welcome to Purchase Requisition</h1>
+                    <p>Please sign-in to your account</p>
                 </Grid>
                 <Grid item xs={12}>
                     <TextField required value={email} onChange={(event) => setEmail(event.target.value)} type="email"

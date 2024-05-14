@@ -1,6 +1,6 @@
 "use client";
 import {PrismaClient, User} from "@prisma/client";
-import {Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, TextField} from "@mui/material";
+import {Button, Dialog, DialogActions, DialogContent, DialogTitle, Grid, TextField, FormControl, InputLabel, Select, MenuItem} from "@mui/material";
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {LoadingButton} from "@mui/lab";
@@ -106,8 +106,19 @@ export default function DialogUser({open, onClose, user}: DialogUserProps) {
                                onChange={(event) => setPassword(event.target.value)}/>
                 </Grid>
                 <Grid item xs={12}>
-                    <TextField fullWidth size={'small'} label={'Role'} required value={role}
-                               onChange={(event) => setRole(event.target.value)}/>
+                    <FormControl fullWidth size={'small'} required>
+                        <InputLabel>Role</InputLabel>
+                        <Select
+                            value={role}
+                            label="Role"
+                            onChange={(event) => setRole(event.target.value)}
+                        >
+                            <MenuItem value={'ADMIN'}>Admin</MenuItem>
+                            <MenuItem value={'PROGRAMS'}>Programs</MenuItem>
+                            <MenuItem value={'APPROVERS'}>Approvers</MenuItem>
+                            <MenuItem value={'PURCHASERS'}>Purchasers</MenuItem>
+                        </Select>
+                    </FormControl>          
                 </Grid>
             </Grid>
         </DialogContent>

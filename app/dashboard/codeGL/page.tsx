@@ -59,7 +59,7 @@ export default function Code() {
             <TableContainer component={Paper} elevation={3} sx={{width: '100%'}}>
                 <Box sx={{p: 2, display: 'flex', justifyContent: 'space-between', alignItems: 'center'}}>
                     <Typography variant={'h6'}>
-                        Code G/L
+                        G/L Code 
                     </Typography>
                     <Button variant={'outlined'} startIcon={<Add/>} onClick={() => setOpen(true)}>Add a new code</Button>
                 </Box>

@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client';
 import {tokenParse} from "@/app/api/tokenParse";
+import { TURBO_TRACE_DEFAULT_MEMORY_LIMIT } from '@/node_modules/next/dist/shared/lib/constants';
 
 export const dynamic = 'force-dynamic' // defaults to auto
 const prisma = new PrismaClient();
@@ -10,11 +11,11 @@ export async function GET(request: Request) {
     if (!token) {
         return Response.json({
             msg: 'Unauthorized'
-        }, { status: 401 });
+        }, {status: 401});
     }
 
     if (request.url.includes('id')) {
-        const { searchParams } = new URL(request.url)
+        const {searchParams} = new URL(request.url)
         const id = searchParams.get('id');
         const purchase = await prisma.purchase.findUnique({
             where: {
@@ -33,35 +34,101 @@ export async function GET(request: Request) {
                     include: {
                         department: true
                     }
-                }
+                },
+                approvedBy: true,
+                rejectedBy: true,
+                purchacePlaceBy: true,
+                receivedBy: true
             }
         })
 
         return Response.json(purchase)
     }
 
-    const user = await prisma.purchase.findMany({
+    const user: any = await prisma.user.findUnique({
         where: {
-            deleted: false,
-        },
-        include: {
-            deliveryContacts: true,
-            vendor: true,
-            user: true,
-            items: {
-                include: {
-                    gLCode: true
-                }
-            },
-            allocation: {
-                include: {
-                    department: true
-                }
-            }
+            id: token.id
         }
     });
 
-    return Response.json(user)
+    let purchases: any[] = []
+
+    if (user.role === 'APPROVERS') {
+        purchases = await prisma.purchase.findMany({
+            where: {
+                deleted: false,
+                submittedAt: {
+                    not: null
+                },
+                approvedAt: null
+            },
+            include: {
+                deliveryContacts: true,
+                vendor: true,
+                user: true,
+                items: {
+                    include: {
+                        gLCode: true
+                    }
+                },
+                allocation: {
+                    include: {
+                        department: true
+                    }
+                }
+            }
+        });
+    } else if (user.role === 'PURCHASERS') {
+        purchases = await prisma.purchase.findMany({
+            where: {
+                deleted: false,
+                submittedAt: {
+                    not: null
+                },
+                approvedAt: {
+                    not: null
+                },
+                purchacePlaceAt: null
+            },
+            include: {
+                deliveryContacts: true,
+                vendor: true,
+                user: true,
+                items: {
+                    include: {
+                        gLCode: true
+                    }
+                },
+                allocation: {
+                    include: {
+                        department: true
+                    }
+                }
+            }
+        });
+    } else
+        purchases = await prisma.purchase.findMany({
+            where: {
+                deleted: false,
+            },
+            include: {
+                deliveryContacts: true,
+                vendor: true,
+                user: true,
+                items: {
+                    include: {
+                        gLCode: true
+                    }
+                },
+                allocation: {
+                    include: {
+                        department: true
+                    }
+                }
+            }
+        });
+
+    return Response.json(purchases)
 }
 
 export async function PATCH(request: Request) {

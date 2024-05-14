@@ -13,7 +13,7 @@ const inter = Inter({subsets: ["latin"]});
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#8C57FF', // Remplacez cette couleur par la couleur primaire souhaitée
+            main: '#822957', // Remplacez cette couleur par la couleur primaire souhaitée
         },
         // Vous pouvez également personnaliser d'autres couleurs ici, comme error, warning, success, etc.
     },

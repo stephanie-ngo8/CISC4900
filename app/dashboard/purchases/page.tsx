@@ -49,7 +49,7 @@ export default function Purchases() {
                         <Typography variant={'h6'}>
                             Purchases
                         </Typography>
-                        <Button variant={'outlined'} startIcon={<Add/>} onClick={() => setOpen(true)}>Add a new purchase</Button>
+                        {(localStorage.getItem('role') === 'ADMIN' || localStorage.getItem('role') === 'PROGRAMS') && <Button variant={'outlined'} startIcon={<Add/>} onClick={() => setOpen(true)}>Add a new purchase</Button>}
                     </Box>
                     <Table sx={{width: '100%'}} size="small" aria-label="a dense table">
                         <TableHead>

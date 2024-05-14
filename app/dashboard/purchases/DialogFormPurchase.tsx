@@ -368,13 +368,16 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
     function getApprovedOrReject() {
         let sentence = '';
         let title = '';
+        let isDisable = false;
 
         if (data?.rejectedAt) {
             title = 'Rejected';
             sentence = `Rejected on ${dayjs(data?.rejectedAt).format("MM-DD-YYYY")} by ${data?.rejectedBy.firstName} ${data?.rejectedBy.lastName}`;
+            isDisable = true
         } else if (data?.approvedAt) {
             title = 'Approved';
             sentence = `Approved on ${dayjs(data?.approvedAt).format("MM-DD-YYYY")} by ${data?.approvedBy.firstName} ${data?.approvedBy.lastName}`;
+            isDisable = true
         } else {
             title = 'Approved or Reject';
             sentence = 'Not yet approved by the manager';
@@ -389,12 +392,12 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
             />
 
         </ListItem>
-            <Button sx={{mr: 1}} onClick={
+            {!isDisable && <Button sx={{mr: 1}} onClick={
                 () => handleStatus('Rejected')
-            } variant={'contained'} color={'error'}>Reject</Button>
-            <Button onClick={
+            } variant={'contained'} color={'error'}>Reject</Button>}
+            {!isDisable && <Button onClick={
                 () => handleStatus('Approved')
-            } variant={'contained'} color={'success'}>Approve</Button>
+            } variant={'contained'} color={'success'}>Approve</Button>}
         </>
     }
 
@@ -420,7 +423,7 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
         </DialogTitle>
         <DialogContent>
             <Grid container spacing={2}>
-                <Grid container spacing={1} item xs={9} sx={{
+                <Grid container spacing={1} item xs={localStorage.getItem('role') !== 'PROGRAMS' ? 9 : 12} sx={{
                     overflow: 'auto',
                     maxHeight: 'calc(100vh - 200px)'
                 }}>
@@ -487,14 +490,14 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                             <Box sx={{p: 0.5}}>
                                 <Button startIcon={
                                     <Add/>
-                                } onClick={handleAddRowTablePricing}>Ajouter</Button>
+                                } onClick={handleAddRowTablePricing}>Add Item</Button>
                             </Box>
                             <Table size={'small'}>
                                 <TableHead>
                                     <TableRow>
                                         <TableCell>Item Number</TableCell>
                                         <TableCell>Description</TableCell>
-                                        <TableCell>G/L code</TableCell>
+                                        <TableCell>G/L Code</TableCell>
                                         <TableCell>Quantity</TableCell>
                                         <TableCell>Unit Price</TableCell>
                                         <TableCell>Total</TableCell>
@@ -569,7 +572,7 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                     <Grid item xs={6}>
                         <TextField fullWidth size={'small'} type="number" required={
                             isTaxed
-                        } placeholder={'taxes'} InputProps={{
+                        } placeholder={'Taxes'} InputProps={{
                             endAdornment:
                                 <InputAdornment position="end">
                                     $
@@ -587,13 +590,13 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                                 <InputAdornment position="end">
                                     $
                                 </InputAdornment>
-                        }} required placeholder={'shipping cost'} value={shippingCost}
+                        }} required placeholder={'Shipping Cost'} value={shippingCost}
                                    onChange={
                                        (event) => setShippingCost(event.target.value)
                                    }/>
                     </Grid>
                     <Grid item xs={12}>
-                        <Typography variant={'h6'}>Grand Total: {calculateGrandTotal()} $</Typography>
+                        <Typography variant={'h6'}>Grand Total: $ {calculateGrandTotal()} </Typography>
                     </Grid>
                     <Grid item xs={12}>
                         <Typography variant={'h6'}>Department / Allocation</Typography>
@@ -611,7 +614,7 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                                 <TableHead>
                                     <TableRow>
                                         <TableCell>Department</TableCell>
-                                        <TableCell>% de Allocation</TableCell>
+                                        <TableCell>% of Allocation</TableCell>
                                         <TableCell>Amount</TableCell>
                                         <TableCell></TableCell>
                                     </TableRow>
@@ -647,7 +650,7 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                         </TableContainer>
                     </Grid>
                 </Grid>
-                <Grid container item xs={3} alignContent={'start'}>
+                {localStorage.getItem('role') !== 'PROGRAMS' && <Grid container item xs={3} alignContent={'start'}>
                     <Grid item xs={12}>
                         <Typography variant={'h6'}>Status</Typography>
                     </Grid>
@@ -725,7 +728,7 @@ export default function DialogFormPurchase({open, onClose, id = null}: DialogFor
                             </TimelineItem>
                         </Timeline>
                     </Grid>
-                </Grid>
+                </Grid>}
             </Grid>
         </DialogContent>
         <DialogActions>

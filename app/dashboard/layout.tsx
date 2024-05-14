@@ -4,10 +4,11 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import axios from "axios";
-import {Avatar, Button, Grid} from "@mui/material";
+import {Avatar, Button, Grid, IconButton} from "@mui/material";
 import React from "react";
 import Paper from "@mui/material/Paper";
 import {useRouter} from "next/navigation";
+import LogoutIcon from '@mui/icons-material/Logout';
 
 export default function DashboardLayout({
                                             children,
@@ -56,8 +57,13 @@ export default function DashboardLayout({
                 }}>
                     <Grid container item xs={12} justifyContent={'space-between'} alignItems={'center'} p={1}>
                         <Box sx={{display: 'flex', alignItems: 'center'}}>
+                            <img src="./CAMBA_FullColor.png" style={{
+                                width: 50,
+                                height: 'auto',
+                                marginRight: 16
+                            }}/>
                             <Typography variant="h6" noWrap component="div">
-                                Purchase
+                                Purchase Requisition Workflow
                             </Typography>
                         </Box>
 
@@ -66,6 +72,13 @@ export default function DashboardLayout({
                                 {user?.firstName} {user?.lastName}
                             </Typography>
                             <Avatar alt={`${user?.firstName} ${user?.lastName}`} src="/static/images/avatar/1.jpg"/>
+                            <IconButton onClick={
+                                () => {
+                                    router.push('/login')
+                                }
+                            }>
+                                <LogoutIcon/>
+                            </IconButton>
                         </Box>
                     </Grid>
                     <Divider/>
@@ -77,7 +90,7 @@ export default function DashboardLayout({
                         }}
                                 onClick={() => {
                                     setPage('dashboard')
-                                    router.push('/dashboard/purchases')
+                                    router.push('/dashboard')
                                 }}>
                             Dashboard
                         </Button>
@@ -135,7 +148,7 @@ export default function DashboardLayout({
                                     setPage('codegl')
                                     router.push('/dashboard/codeGL')
                                 }}>
-                            CodeGL
+                            GL Code
                         </Button>
                     </Grid>
                 </Paper>
